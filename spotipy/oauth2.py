@@ -480,6 +480,11 @@ class SpotifyOAuth(SpotifyAuthBase):
         if open_browser is None:
             open_browser = self.open_browser
 
+        logger.info('temp logs')
+        logger.info(open_browser)
+        logger.info(redirect_host)
+        logger.info(redirect_info.scheme)
+
         if (
                 open_browser
                 and redirect_host in ("127.0.0.1", "localhost")
